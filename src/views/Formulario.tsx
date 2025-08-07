@@ -6,7 +6,7 @@ const Formulario = () => {
   const [name, setName] = useState("");
 
   const generateCode = (id: string) => {
-    const urlActivo = `http://localhost:5173/${id}`;
+    const urlActivo = `https://scannerlogis.netlify.app/${id}`;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     QRCode.toDataURL(urlActivo, (err: any, url: any) => {
